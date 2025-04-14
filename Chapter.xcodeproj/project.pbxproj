@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2892F52D2DAD690100D876FE /* CRDTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2892F52C2DAD690100D876FE /* CRDTSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2892F50F2DAD68B600D876FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		2892F5182DAD68B600D876FE /* ChapterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChapterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2892F54E2DAD6B6A00D876FE /* Exceptions for "Chapter" folder in "Chapter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2892F4FD2DAD68B400D876FE /* Chapter */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2892F5002DAD68B400D876FE /* Chapter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2892F54E2DAD6B6A00D876FE /* Exceptions for "Chapter" folder in "Chapter" target */,
+			);
 			path = Chapter;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2892F52D2DAD690100D876FE /* CRDTSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = Chapter;
 			packageProductDependencies = (
+				2892F52C2DAD690100D876FE /* CRDTSwift */,
 			);
 			productName = Chapter;
 			productReference = 2892F4FE2DAD68B400D876FE /* Chapter.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = 2892F4F52DAD68B400D876FE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2892F52B2DAD690100D876FE /* XCLocalSwiftPackageReference "../../SDKs/SwiftPackages/CRDTSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2892F4FF2DAD68B400D876FE /* Products */;
 			projectDirPath = "";
@@ -393,12 +415,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Chapter/Chapter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter/Preview Content\"";
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chapter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,12 +446,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Chapter/Chapter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter/Preview Content\"";
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chapter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +584,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		2892F52B2DAD690100D876FE /* XCLocalSwiftPackageReference "../../SDKs/SwiftPackages/CRDTSwift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../SDKs/SwiftPackages/CRDTSwift;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2892F52C2DAD690100D876FE /* CRDTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CRDTSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2892F4F62DAD68B400D876FE /* Project object */;
 }
